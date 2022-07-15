@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "SampleProject/1.0.0": {
+        "dependencies": {
+          "SimpleFileSystemAbstraction": "1.0.0"
+        },
+        "runtime": {
+          "SampleProject.dll": {}
+        }
+      },
+      "SimpleFileSystemAbstraction/1.0.0": {
+        "runtime": {
+          "SimpleFileSystemAbstraction.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SampleProject/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SimpleFileSystemAbstraction/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
