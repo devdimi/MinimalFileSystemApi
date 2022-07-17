@@ -1,12 +1,12 @@
-﻿using SimpleFileSystemAbstraction.Interfaces;
+﻿using MinimalFileSystemApi.Interfaces;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SimpleFileSystemAbstraction
+namespace MinimalFileSystemApi
 {
-    public class MockReader : IMinimalLineReader
+    public class MockReader : ILineReader
     {
         public List<String> Lines;
 

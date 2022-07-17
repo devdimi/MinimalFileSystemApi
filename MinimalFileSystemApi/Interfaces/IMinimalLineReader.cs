@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SimpleFileSystemAbstraction.Interfaces
+namespace MinimalFileSystemApi.Interfaces
 {
     /// <summary> Interface to read text line wise.</summary>
-    public interface IMinimalLineReader : IDisposable
+    public interface ILineReader : IDisposable
     {
         /// <summary>Read line of text, return null if no text is available.</summary>
         /// <returns>line of text.</returns>

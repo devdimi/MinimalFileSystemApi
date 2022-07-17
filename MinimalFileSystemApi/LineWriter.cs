@@ -1,29 +1,25 @@
-﻿using SimpleFileSystemAbstraction.Interfaces;
+﻿using MinimalFileSystemApi.Interfaces;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace SimpleFileSystemAbstraction
+namespace MinimalFileSystemApi
 {
     /// <summary>Class to write </summary>
-    public class MinimalLineWriter : IMinimalLineWriter
+    public class LineWriter : ILineWriter
     {
         /// <summary>internal writer.</summary>
         private System.IO.TextWriter writer;
 
         /// <summary>Creates new instance of the MinimalLineWriter based on the file name.</summary>
         /// <param name="fileName">the file name</param>
-        public MinimalLineWriter(String fileName) : this(new StreamWriter(fileName))
+        public LineWriter(String fileName) : this(new StreamWriter(fileName))
         {
         }
 
         /// <summary>
         /// Creates new instance of the class with the textwriter. When instance of the class is disposed this writer is also disposed.</summary>
         /// <param name="writer">the writer</param>
-        public MinimalLineWriter(TextWriter writer) 
+        public LineWriter(TextWriter writer) 
         {
             this.writer = writer; 
         }

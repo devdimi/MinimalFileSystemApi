@@ -1,4 +1,4 @@
-﻿using SimpleFileSystemAbstraction.Interfaces;
+﻿using MinimalFileSystemApi.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimpleFileSystemAbstraction
+namespace MinimalFileSystemApi
 {
     public class MinimalFileSystem : IMinimalFileSystem
     {
@@ -20,14 +20,14 @@ namespace SimpleFileSystemAbstraction
             return File.Exists(fileName);
         }
 
-        public IMinimalLineReader GetReader(string fileName)
+        public ILineReader GetReader(string fileName)
         {
-            return new MinimalLineReader(new StreamReader(fileName));
+            return new LineReader(new StreamReader(fileName));
         }
 
-        public IMinimalLineWriter GetWriter(string fileName)
+        public ILineWriter GetWriter(string fileName)
         {
-            return new MinimalLineWriter(new StreamWriter(fileName));
+            return new LineWriter(new StreamWriter(fileName));
         }
     }
 }

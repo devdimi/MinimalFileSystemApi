@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace SimpleFileSystemAbstraction
+namespace MinimalFileSystemApi
 {
     /// <summary>This class creates temporary file when created which is deleted when disposed.</summary>
     public class TemporayFile : IDisposable

@@ -1,4 +1,4 @@
-﻿using SimpleFileSystemAbstraction.Interfaces;
+﻿using MinimalFileSystemApi.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ namespace SampleProject
 {
     public class StripEmptyLines
     { 
-        public void Process(IMinimalLineReader reader, IMinimalLineWriter writer)
+        public void Process(ILineReader reader, ILineWriter writer)
         {
             String line = null;
             while (null != (line = reader.ReadLine()))

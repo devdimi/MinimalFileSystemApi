@@ -1,9 +1,9 @@
-﻿using SimpleFileSystemAbstraction.Interfaces;
+﻿using MinimalFileSystemApi.Interfaces;
 using System;
 using System.Collections.Generic;
-namespace SimpleFileSystemAbstraction
+namespace MinimalFileSystemApi
 {
-    public class CollectingWriter : IMinimalLineWriter
+    public class CollectingWriter : ILineWriter
     {
         public void Dispose()
         { }

@@ -1,10 +1,10 @@
+using MinimalFileSystemApi;
 using NUnit.Framework;
 using SampleProject;
-using SimpleFileSystemAbstraction;
 using System.IO;
 using System.Linq;
 
-namespace SimpleFileSystemAbstractionTests
+namespace MinimalFileSystemApiTests
 {
     [TestFixture]
     public class StripEmptyLinesTest
@@ -42,9 +42,9 @@ namespace SimpleFileSystemAbstractionTests
                 using(TemporayFile outputFile = new TemporayFile())
                 {
                     StripEmptyLines stripEmptyLines = new StripEmptyLines();
-                    using(MinimalLineReader reader = new MinimalLineReader(inputFile.FileName))
+                    using(LineReader reader = new LineReader(inputFile.FileName))
                     {
-                        using(MinimalLineWriter writer = new MinimalLineWriter(outputFile.FileName))
+                        using(LineWriter writer = new LineWriter(outputFile.FileName))
                         {
                             stripEmptyLines.Process(reader, writer);
                         }

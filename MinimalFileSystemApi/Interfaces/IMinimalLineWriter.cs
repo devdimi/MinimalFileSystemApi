@@ -1,11 +1,10 @@
 ﻿using System;
 
-namespace SimpleFileSystemAbstraction.Interfaces
+namespace MinimalFileSystemApi.Interfaces
 {
     /// <summary>Minimal line writer interface.</summary>
-    public interface IMinimalLineWriter : IDisposable
+    public interface ILineWriter : IDisposable
     {
         void WriteLine(String line);
     }
-
 }

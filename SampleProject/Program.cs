@@ -1,5 +1,4 @@
-﻿using SimpleFileSystemAbstraction.Interfaces;
-using System;
+﻿using System;
 
 namespace SampleProject
 {
