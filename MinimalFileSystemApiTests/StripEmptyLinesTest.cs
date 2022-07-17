@@ -18,7 +18,7 @@ namespace MinimalFileSystemApiTests
             "Second Line ...",
             "Thrid line"};
 
-            MockReader lineReader = new MockReader(text);
+            ReaderForTests lineReader = new ReaderForTests(text);
             CollectingWriter writer = new CollectingWriter();
             StripEmptyLines stripEmptyLines = new StripEmptyLines();
             stripEmptyLines.Process(lineReader, writer);

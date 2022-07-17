@@ -6,11 +6,11 @@ using System.Text;
 
 namespace MinimalFileSystemApi
 {
-    public class MockReader : ILineReader
+    public class ReaderForTests : ILineReader
     {
         public List<String> Lines;
 
-        public MockReader(params String[] linesArg)
+        public ReaderForTests(params String[] linesArg)
         {
             this.Lines = new List<string>(linesArg);
             this.enumerator = this.Lines.GetEnumerator();
