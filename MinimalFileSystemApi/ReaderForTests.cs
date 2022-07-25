@@ -6,9 +6,14 @@ using System.Text;
 
 namespace MinimalFileSystemApi
 {
+    /// <summary>
+    /// This reader can be used for unit tests as it can be filled
+    /// with lines without reading files.
+    /// </summary>
     public class ReaderForTests : ILineReader
     {
-        public List<String> Lines;
+        /// <summary>Gets the lines fed into the reader.</summary>
+        public List<String> Lines { get; }
 
         public ReaderForTests(params String[] linesArg)
         {
