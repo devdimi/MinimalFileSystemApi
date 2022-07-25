@@ -11,11 +11,20 @@
     <PackageTags>file system; interface; unit testing</PackageTags>
     <PackageReleaseNotes>Initial release</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/devdimi/MinimalFileSystemApi</PackageProjectUrl>
+    <Title>Minimal File System Api</Title>
+    <CopyRight>Dimitar Evgeniev Dimitrov</CopyRight>
+    <Summary>
+      Using this api enables easier unit testint.
+      Goals
+      1. Provide minmal but usable file system interface
+      2. Allow easy unit testing when using this interface
+    </Summary>
     <Description> Minimal File System Interface
 
  Goals
  1. Provide minmal but usable file system interface
  2. Allow easy unit testing when using this interface</Description>
+    <LicenseUrl>https://www.apache.org/licenses/LICENSE-2.0.html</LicenseUrl>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
