@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
 	  <Authors>Dimitar Evgeniev Dimitrov</Authors>
-    <PackageId>MinimalFileSystemApi</PackageId>
+    <PackageId>devdimi.MinimalFileSystemApi</PackageId>
     <Company>Dimitar Evgeniev Dimitrov</Company>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/devdimi/MinimalFileSystemApi</RepositoryUrl>
