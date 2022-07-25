@@ -1,4 +1,9 @@
-﻿	The goal of this project is to define simple file system interface that allowes easy unit testing.
+﻿	Minimal File System Interface
 
-	Instead of programming directky against File.Read, File.Write, FileReader and StreamReader/StreamWriter you can use this interaface, 
-	which will allow you to easily unit test your code without actually writing/reading to the file system.
+	Goals
+	1. Provide minmal but usable file system interface
+	2. Allow easy unit testing when using this interface
+	
+	Instead of programming directly against 
+	File.Read, File.Write, FileReader and StreamReader/StreamWriter you can use this interaface, 
+	which to allow easy unit testing your code without actually writing/reading to the file system.

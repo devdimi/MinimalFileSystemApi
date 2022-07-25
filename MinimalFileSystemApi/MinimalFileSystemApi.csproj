@@ -2,6 +2,28 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
+	  <Authors>Dimitar Evgeniev Dimitrov</Authors>
+    <PackageId>MinimalFileSystemApi</PackageId>
+    <Company>Dimitar Evgeniev Dimitrov</Company>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/devdimi/MinimalFileSystemApi</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>file system; interface; unit testing</PackageTags>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/devdimi/MinimalFileSystemApi</PackageProjectUrl>
+    <Description> Minimal File System Interface
+
+ Goals
+ 1. Provide minmal but usable file system interface
+ 2. Allow easy unit testing when using this interface</Description>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
