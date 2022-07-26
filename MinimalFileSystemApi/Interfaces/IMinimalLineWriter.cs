@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MinimalFileSystemApi.Interfaces
+namespace MinimalFileSystemApi
 {
     /// <summary>Minimal line writer interface.</summary>
     public interface ILineWriter : IDisposable

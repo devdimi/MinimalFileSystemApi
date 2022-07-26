@@ -18,7 +18,12 @@ namespace MinimalFileSystemApiTests
             "Second Line ...",
             "Thrid line"};
 
-            ReaderForTests lineReader = new ReaderForTests(text);
+            ReaderForTests lineReader = new ReaderForTests(
+                new[] {
+                    "First Line",
+                    string.Empty,
+                    "Second Line ...",
+                    "Thrid line"});
             CollectingWriter writer = new CollectingWriter();
             StripEmptyLines stripEmptyLines = new StripEmptyLines();
             stripEmptyLines.Process(lineReader, writer);

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MinimalFileSystemApi.Interfaces
+namespace MinimalFileSystemApi
 {
     /// <summary> Interface to read text line wise.</summary>
     public interface ILineReader : IDisposable

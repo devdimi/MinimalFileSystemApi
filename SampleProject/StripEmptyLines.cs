@@ -1,4 +1,4 @@
-﻿using MinimalFileSystemApi.Interfaces;
+﻿using MinimalFileSystemApi;
 using System;
 using System.Collections.Generic;
 using System.Linq;

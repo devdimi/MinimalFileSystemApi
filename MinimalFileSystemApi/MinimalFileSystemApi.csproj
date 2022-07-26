@@ -26,6 +26,7 @@
  2. Allow easy unit testing when using this interface</Description>
     <LicenseUrl>https://www.apache.org/licenses/LICENSE-2.0.html</LicenseUrl>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

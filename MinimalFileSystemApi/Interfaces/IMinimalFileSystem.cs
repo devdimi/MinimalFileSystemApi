@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MinimalFileSystemApi.Interfaces
+namespace MinimalFileSystemApi
 {
     /// <summary> Interface that defines abstract file system.</summary>
     public interface IMinimalFileSystem
