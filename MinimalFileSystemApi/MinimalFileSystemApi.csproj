@@ -33,7 +33,7 @@
   
   <AssemblyName>MinimalFileSystemApi</AssemblyName>
   <RootNamespace>MinimalFileSystemApi</RootNamespace>
-  <VersionSuffix>2.0.0.$([System.DateTime]::UtcNow.ToString(MMdd))</VersionSuffix>
+  <VersionSuffix>3.0.0.$([System.DateTime]::UtcNow.ToString(MMdd))</VersionSuffix>
   <AssemblyVersion Condition=" '$(VersionSuffix)' == '' ">0.0.0.1</AssemblyVersion>
   <AssemblyVersion Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix)</AssemblyVersion>
   <Version Condition=" '$(VersionSuffix)' == '' ">0.0.1.0</Version>

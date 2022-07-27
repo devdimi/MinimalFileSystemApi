@@ -7,9 +7,13 @@ using System.Threading.Tasks;
 
 namespace MinimalFileSystemApi
 {
+    /// <summary> Minimal directory implementation.</summary>
     public class MinimalDirectory : IDirectory
     {
-        public IEnumerable<ILineReader> GetFiles(string pattern)
+        /// <summary>Get the files in this directory and all subdirectories.</summary>
+        /// <param name="dir">the directory</param> <param name="pattern">the pattern</param>
+        /// <returns>IEnumerable of line readers.</returns>
+        public IEnumerable<ILineReader> GetFiles(String dir, string pattern)
         {
             var files = Directory.EnumerateFiles("", "*.cs", SearchOption.AllDirectories);
             foreach (String file in  files)
