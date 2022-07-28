@@ -50,6 +50,10 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+    <None Include="bin\Debug\net6.0\MinimalFileSystemApi.pdb">
+      <Pack>True</Pack>
+      <PackagePath>lib\net6.0</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

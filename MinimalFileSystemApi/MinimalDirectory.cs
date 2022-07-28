@@ -15,7 +15,7 @@ namespace MinimalFileSystemApi
         /// <returns>IEnumerable of line readers.</returns>
         public IEnumerable<ILineReader> GetFiles(String dir, string pattern)
         {
-            var files = Directory.EnumerateFiles("", "*.cs", SearchOption.AllDirectories);
+            var files = Directory.EnumerateFiles(dir, "*.cs", SearchOption.AllDirectories);
             foreach (String file in  files)
             {
                 var lineReader = new LineReader(file);
