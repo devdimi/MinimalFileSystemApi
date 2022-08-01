@@ -13,7 +13,8 @@ namespace MinimalFileSystemApi
         /// <summary>Creates new instance of the MinimalLineReader class from the fileName.</summary>
         /// <param name="fileName">the file Name</param>
         public LineReader(String fileName) : this(new StreamReader(fileName)) 
-        { 
+        {
+            this.FileName = fileName;
         }
 
         /// <summary>Creates new instance of the MinimalLineReader class from the TextReader.
@@ -23,6 +24,10 @@ namespace MinimalFileSystemApi
         {
             this.reader = reader; 
         }
+
+        
+        /// <inheritdoc />
+        public String FileName { get; }
 
         public String ReadLine() 
         { 

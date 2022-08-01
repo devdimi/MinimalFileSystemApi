@@ -20,6 +20,9 @@ namespace MinimalFileSystemApi
             this.enumerator = this.Lines.GetEnumerator();
         }
 
+        /// <inheritdoc />
+        public String FileName { get; set; }
+
         private IEnumerator enumerator;
 
         public void Dispose() { }
