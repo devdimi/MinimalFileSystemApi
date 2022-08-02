@@ -29,11 +29,13 @@ namespace MinimalFileSystemApi
         /// <inheritdoc />
         public String FileName { get; }
 
+        /// <inheritdoc />
         public String ReadLine() 
         { 
             return this.reader.ReadLine(); 
         }
 
+        /// <inheritdoc />
         public void Dispose() 
         { 
             this.reader.Dispose(); 

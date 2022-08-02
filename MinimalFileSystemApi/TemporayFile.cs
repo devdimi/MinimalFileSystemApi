@@ -15,6 +15,7 @@ namespace MinimalFileSystemApi
         /// <summary>Gets the File name</summary>
         public String FileName { get; }
 
+        /// <inheritdoc />
         public void Dispose()
         {
             if (File.Exists(this.FileName))
